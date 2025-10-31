@@ -72,31 +72,3 @@ ecommerce-catalog/
 └── vite.config.js
 ```
 
-## 🔄 Flow Aplikasi
-
-1. **Aplikasi load** → Fetch product ID 1
-2. **Cek category**:
-   - Jika `men's clothing` atau `women's clothing` → Tampilkan
-   - Jika category lain → Skip otomatis ke produk berikutnya
-3. **User klik "Next product"** → Increment ID dan fetch
-4. **ID mencapai 20** → Reset ke ID 1
-
-## 🎯 Ketentuan yang Dipenuhi
-
-✅ API Call dengan endpoint `https://fakestoreapi.com/products/{index}` (1-20)  
-✅ Increment index setiap klik Next Product  
-✅ Reset index ke 1 setelah mencapai 20  
-✅ **Filter category: hanya simpan men's/women's clothing**  
-✅ 3 macam desain (men section, women section, unavailable)  
-✅ Vanilla CSS tanpa framework  
-✅ Color palette variables  
-✅ Class binding untuk kategori produk
-
-## 👨‍💻 Developer
-
-**[Nama Lengkap Kamu]**  
-VIX Frontend Development Challenge
-
-## 📄 License
-
-MIT License
