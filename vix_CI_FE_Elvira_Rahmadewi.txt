@@ -1,7 +1,7 @@
 Repository GitHub:
 https://github.com/prideandjuice/ecommerce-catalog
 
-Nama: [Isi nama lengkap Anda di sini]
+Nama: Elvira Rahmadewi
 Program: VIX - Cloud Infrastructure & Frontend Engineer
 
 Deskripsi Project:
