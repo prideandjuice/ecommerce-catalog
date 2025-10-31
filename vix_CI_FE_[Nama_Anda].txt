@@ -1,0 +1,37 @@
+Repository GitHub:
+https://github.com/prideandjuice/ecommerce-catalog
+
+Nama: [Isi nama lengkap Anda di sini]
+Program: VIX - Cloud Infrastructure & Frontend Engineer
+
+Deskripsi Project:
+- E-Commerce Product Catalog menggunakan Vue 3 + Vite
+- Fetch data dari Fake Store API (https://fakestoreapi.com)
+- Menampilkan produk men's clothing dan women's clothing
+- Filter otomatis untuk skip produk selain clothing
+- Responsive design dengan gradient background
+- Skeleton loader untuk UX yang lebih baik
+
+Tech Stack:
+- Vue 3 (Composition API)
+- Vite
+- Vanilla CSS
+- Fake Store API
+
+Fitur:
+✅ API Call dengan endpoint https://fakestoreapi.com/products/[1-20]
+✅ Next Product button dengan auto increment & reset ke 1 setelah ID 20
+✅ Filter category: hanya simpan men's clothing dan women's clothing
+✅ 3 desain: Page-Men, Page-Women, dan Page-Unavailable (auto skip)
+✅ Class binding berdasarkan category
+✅ Color palette variables menggunakan Vanilla CSS
+✅ Skeleton loader saat fetch data
+✅ Caching untuk performa lebih baik
+✅ Prefetch produk berikutnya
+✅ Responsive design
+
+Cara Menjalankan:
+1. Clone repository: git clone https://github.com/prideandjuice/ecommerce-catalog.git
+2. Install dependencies: npm install
+3. Run dev server: npm run dev
+4. Buka browser: http://localhost:5173

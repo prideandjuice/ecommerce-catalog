@@ -1,38 +1,102 @@
-# cd ecommerce-catalog
+# E-Commerce Catalog
 
-This template should help get you started developing with Vue 3 in Vite.
+Product catalog viewer yang menampilkan produk clothing dari FakeStore API dengan desain modern dan interaktif.
 
-## Recommended IDE Setup
+## 🎯 Fitur
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- ✅ Fetch produk dari [FakeStore API](https://fakestoreapi.com/)
+- ✅ Filter otomatis: hanya menampilkan **men's clothing** dan **women's clothing**
+- ✅ Navigasi produk dengan tombol "Next product"
+- ✅ Desain berbeda untuk kategori men's dan women's
+- ✅ Skeleton loader saat fetch data
+- ✅ Caching produk untuk performa lebih baik
+- ✅ Prefetch produk berikutnya
+- ✅ Gradient background yang menarik
+- ✅ Responsive design
 
-## Recommended Browser Setup
+## 🛠️ Teknologi
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Vue 3** (Composition API)
+- **Vite** (Build tool)
+- **Vanilla CSS** (No framework)
+- **FakeStore API**
 
-## Customize configuration
+## 📦 Instalasi
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+```bash
+# Clone repository
+git clone https://github.com/[username]/ecommerce-catalog.git
 
-## Project Setup
+# Masuk ke folder project
+cd ecommerce-catalog
 
-```sh
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Jalankan dev server
 npm run dev
 ```
 
-### Compile and Minify for Production
+## 🎨 Design System
 
-```sh
-npm run build
+### Color Palette
+
+- **Primary Blue**: `#002772`
+- **Light Purple**: `#FDE2FF`
+- **Dark Gray**: `#1E1E1E`
+- **Magenta**: `#720060`
+- **Light Blue**: `#D6E6FF`
+- **Medium Gray**: `#3F3F3F`
+- **Light Gray**: `#DCDCDC`
+- **White**: `#FFFFFF`
+
+### Komponen Desain
+
+1. **Page-Men**: Desain untuk produk men's clothing (border & accent biru)
+2. **Page-Women**: Desain untuk produk women's clothing (border & accent magenta)
+
+## 📱 Struktur Project
+
 ```
+ecommerce-catalog/
+├── src/
+│   ├── components/
+│   │   └── ProductViewer.vue    # Komponen utama
+│   ├── assets/
+│   │   ├── base.css             # CSS variables & global styles
+│   │   └── main.css
+│   ├── App.vue                  # Root component
+│   └── main.js
+├── public/
+├── package.json
+└── vite.config.js
+```
+
+## 🔄 Flow Aplikasi
+
+1. **Aplikasi load** → Fetch product ID 1
+2. **Cek category**:
+   - Jika `men's clothing` atau `women's clothing` → Tampilkan
+   - Jika category lain → Skip otomatis ke produk berikutnya
+3. **User klik "Next product"** → Increment ID dan fetch
+4. **ID mencapai 20** → Reset ke ID 1
+
+## 🎯 Ketentuan yang Dipenuhi
+
+✅ API Call dengan endpoint `https://fakestoreapi.com/products/{index}` (1-20)  
+✅ Increment index setiap klik Next Product  
+✅ Reset index ke 1 setelah mencapai 20  
+✅ **Filter category: hanya simpan men's/women's clothing**  
+✅ 3 macam desain (men section, women section, unavailable)  
+✅ Vanilla CSS tanpa framework  
+✅ Color palette variables  
+✅ Class binding untuk kategori produk
+
+## 👨‍💻 Developer
+
+**[Nama Lengkap Kamu]**  
+VIX Frontend Development Challenge
+
+## 📄 License
+
+MIT License
